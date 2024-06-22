@@ -9,6 +9,17 @@ export default function HomeScreen() {
             <div className={styles.info}>
                 <img src={logo} className={styles.logo} alt="logo" />
                 <h3>KENNETH ADJETEY ADJEI-MENSAH</h3>
+                <section>
+                    <a href='https://www.facebook.com/ken.cal.547/'>
+                        <ion-icon name="logo-facebook" size='large'></ion-icon>
+                    </a>
+                    <ion-icon name="logo-instagram" size='large' />
+
+                    <a href='https://github.com/kencal20' style={{ color: 'black' }}>
+                        <ion-icon name="logo-github" size='large' />
+                    </a>
+                </section>
+
             </div>
             <div className={styles.content}>
                 <h1>About Me</h1>
