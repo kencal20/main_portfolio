@@ -1,11 +1,11 @@
 import React from 'react'
 import logo from '../logo.svg'
-import Navbar from '../components/navbar'
+
 import { Button } from 'react-bootstrap'
 export default function HomeScreen() {
     return (
         <>
-            <Navbar />
+         
             <div style={styles.container}>
                 <div>
                     <img src={logo} style={styles.logo} alt="logo" />
