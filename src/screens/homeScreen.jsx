@@ -5,10 +5,11 @@ import { Button } from 'react-bootstrap'
 export default function HomeScreen() {
     return (
         <>
-         
+
             <div style={styles.container}>
-                <div>
+                <div style={styles.info}>
                     <img src={logo} style={styles.logo} alt="logo" />
+                    <h3>KENNETH ADJETEY ADJEI-MENSAH</h3>
                 </div>
                 <div style={styles.content}>
                     <h1 style={styles.h1}>About Me</h1>
@@ -33,6 +34,9 @@ const styles = {
         backgroundColor: '#f5f5f5',
         minWidth: '100vw',
         minHeight: '100vh',
+    },
+    info: {
+        textAlign: 'center',
     },
     logo: {
         height: '10em',
