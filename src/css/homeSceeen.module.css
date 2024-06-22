@@ -8,10 +8,12 @@
     background-color: #f5f5f5;
     min-width: 100vw;
     min-height: 100vh;
+    padding: 30px;
 }
 
 .info {
     text-align: center;
+    margin-bottom: 5em;
 }
 
 .logo {
@@ -27,8 +29,12 @@
     margin: 3em;
 }
 
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+    }
+    .info {
+        margin-bottom: 0;
     }
 }
