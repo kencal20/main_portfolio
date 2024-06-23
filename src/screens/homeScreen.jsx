@@ -1,34 +1,48 @@
 import React from 'react'
-import logo from '../logo.svg'
-import { Button } from 'react-bootstrap'
-import styles from '../css/homeSceeen.module.css'
-
+import profile from '../img/doc3.jpeg' 
 export default function HomeScreen() {
     return (
-        <div className={styles.container}>
-            <div className={styles.info}>
-                <img src={logo} className={styles.logo} alt="logo" />
-                <h3>KENNETH ADJETEY ADJEI-MENSAH</h3>
+        <div style={styles.mainContainer}>
+            <div style={styles.intro}>
                 <section>
-                    <a href='https://www.facebook.com/ken.cal.547/'>
-                        <ion-icon name="logo-facebook" size='large'></ion-icon>
-                    </a>
-                    <ion-icon name="logo-instagram" size='large' />
-
-                    <a href='https://github.com/kencal20' style={{ color: 'black' }}>
-                        <ion-icon name="logo-github" size='large' />
-                    </a>
+                    <h1><strong>KENNETH ADJETEY ADJEI-MENSAH</strong>
+                        <br />
+                        Frontend Developer</h1>
+                    <p>
+                        I'm a passionate frontend developer with a strong focus on building clean,
+                        responsive, and user-friendly web applications.
+                    </p>
                 </section>
-
-            </div>
-            <div className={styles.content}>
-                <h1>About Me</h1>
-                <hr />
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sit similique quaerat aperiam? Esse, incidunt.
-                </p>
-                <Button>Read more</Button>
+                <section style={styles.profile.Container}>
+                    <img src={profile} alt="profile" srcset="" />
+                </section>
             </div>
         </div>
     )
+}
+
+const styles = {
+    mainContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        flex: 1,
+        width: '100vw',
+        height: '100vh',
+        backgroundColor: '#F5F5F5',
+        justifyContent: 'center',
+        padding:50
+    },
+    intro: {
+        display:'flex',
+        flexDirection:'row',    
+    },
+    profile:{
+        Container:{
+            marginLeft: 'auto',
+        },
+        img:{
+            borderRadius:100,
+            
+        }
+    }
 }
