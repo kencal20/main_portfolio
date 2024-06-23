@@ -5,6 +5,7 @@ import MyNavbar from '../components/navbar'
 import NotFound from '../screens/notfoundScreen'
 import ContactScreen from '../screens/contactScreen'
 import AboutUsScreen from '../screens/aboutScreen'
+import FooterComponent from '../components/footer'
 
 export default function RouterComponent() {
     return (
@@ -17,6 +18,7 @@ export default function RouterComponent() {
                 <Route path='/about' element={<AboutUsScreen />} />
                 <Route path='*' element={<NotFound />} />
             </Routes>
+            <FooterComponent/>
         </BrowserRouter>
     )
 }
