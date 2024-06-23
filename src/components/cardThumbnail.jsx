@@ -15,15 +15,15 @@ export default function CardThumbnail({ imgSrc, imgAlt, link, title, children })
   );
 }
 
-const styles= {
+const styles = {
   card: {
     width: '25rem',
     height: '20rem',
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-    padding:10
+    padding: 10
   },
-  img:{
-    width: '50%',
+  img: {
+    width: '100%',
     height: '50%',
     objectPosition: 'center',
     borderRadius: '10px',
