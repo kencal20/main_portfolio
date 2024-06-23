@@ -2,7 +2,7 @@ import React from 'react';
 import profile from '../img/doc3.jpeg';
 import CardThumbnail from '../components/cardThumbnail';
 import { cardData } from '../components/cardData';
-import styles from  '../css/homeSceeen.module.css'
+import styles from '../css/homeSceeen.module.css';
 
 export default function HomeScreen() {
   return (
@@ -27,15 +27,14 @@ export default function HomeScreen() {
       <div className={styles.body}>
         <section className={styles.mainBody}>
           <h1>Featured Projects</h1>
-          <div className="row">
+          <div className={styles.cardContainer}>
             {cardData.map((item, index) => (
-              <div key={index} className="col-md-4">
+              <div key={index} className={styles.card}>
                 <CardThumbnail
                   imgSrc={item.imgSrc}
                   imgAlt={item.imgAlt}
                   link={item.link}
                   title={item.title}
-                  
                 >
                   {item.children}
                 </CardThumbnail>
