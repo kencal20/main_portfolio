@@ -1,40 +1,65 @@
-
-.container {
+.mainContainer {
     display: flex;
+    flex-direction: column;
     flex: 1;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  
+  .intro {
+    display: flex;
     flex-direction: row;
+    align-items: center;
+   text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .introText {
+    flex: 1 1 50%;
+    margin-bottom: 20px;
+  }
+  
+  .profileContainer {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+  
+  .profileImg {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    max-height: 50vh;
+  }
+  
+  .body {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .mainBody {
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
-    min-width: 100vw;
-    min-height: 100vh;
-    padding: 30px;
-}
+    min-height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
 
-.info {
-    text-align: center;
-    margin-bottom: 5em;
-}
-
-.logo {
-    height: 10em;
-    width: 10em;
-    margin: 3em;
-    padding: 1em;
-    border-radius: 50%;
-    border: 1px solid #000;
-}
-
-.content {
-    margin: 3em;
-}
-
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+  
+  @media (max-width: 768px) {
+    .intro {
+      flex-direction: column;
     }
-    .info {
-        margin-bottom: 0;
+    .introText {
+      margin-bottom: 0;
     }
-}
+  }
+  
