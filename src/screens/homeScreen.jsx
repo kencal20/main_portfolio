@@ -5,7 +5,9 @@ import { cardData } from '../components/projectcardData';
 import styles from '../css/homeSceeen.module.css';
 
 
+
 export default function HomeScreen() {
+
   return (
     <div className={styles.mainContainer}>
       <div className={styles.intro}>
@@ -42,21 +44,6 @@ export default function HomeScreen() {
               </div>
             ))}
           </div>
-        </section>
-        <section className={styles.contactSection}>
-          <h1>Let's Work Together</h1>
-          <form className={styles.contactForm}>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className={styles.emailInput}
-              required
-            />
-            <button type="submit" className={styles.submitButton}>Submit</button>
-          </form>
-          <p>
-            I'll get back to you as soon as possible.
-          </p>
         </section>
       </div>
     </div>
