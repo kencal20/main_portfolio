@@ -58,45 +58,6 @@
   gap: 20px;
 }
 
-.contactSection {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.contactForm {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.emailInput {
-  padding: 5px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  width: 100%;
-  max-width: 300px;
-}
-
-.submitButton {
-  padding: 5px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin:0 10px 10px 10px
-  
-}
-
-.submitButton:hover {
-  background-color: #0056b3;
-}
-
 @media (max-width: 825px) {
   .intro {
     flex-direction: column;
